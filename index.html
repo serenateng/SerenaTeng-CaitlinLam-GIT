@@ -1,12 +1,41 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Photo Gallery</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+
 </head>
 
 <body>
+
+<div id="container"> <!--start of container -->
+	
+	<h1>England Adventures</h1>
+			 <p id="photoNum">1 of 6</h2>
+	
+		 <h2 id="photoCaption">Cambridge Flowers</h2>
+           <div id="largeImage"> <img src="images/cambridge.jpg" id="cambridge" alt="Cambridge Flowers"> </div>
+	
+
+		<h2 class = "hidden">Select an Image</h2>
+		<ul id = "thumbnailList"><!--start of thumbnails ul-->
+			<li><img id="0" class="space" src = "images/cambridge.jpg" alt="Cambridge"></img></li>
+			<li><img id="1" class="space" src = "images/london.jpg" alt="London"></img></li>
+			<li><img id="2" class="space" src = "images/laduree.jpg" alt="Laduree"></img></li>
+			<li><img id="3" class="space" src = "images/dover.jpg" alt="Dover"></img></li>
+			<li><img id="4" class="space" src = "images/lincolnshire.jpg" alt="Lincolnshire"></img></li>
+			<li><img id="5" class="space" src = "images/university.jpg" alt="Lake District"></img></li>
+
+		</ul><!--end of thumbnails ul-->
+
+
+</div> <!--end of container -->
+
+
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
 <script src="js/main.js"></script>
 </html>
