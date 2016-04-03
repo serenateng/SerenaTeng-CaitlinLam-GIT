@@ -72,7 +72,13 @@ p
 	width:100%;
 	height:100%;
 	border-radius: 20px;
-	border: 4px solid #ccc8d0;
+}
+
+#largeImage img
+{
+	display:block;
+	margin: 0 auto;
+	padding:20px;
 }
 
 
