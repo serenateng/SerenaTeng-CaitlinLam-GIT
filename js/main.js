@@ -6,12 +6,11 @@
 
 	//Variables
 	
-	var photographs = ["cambridge", "london", "laduree", "dover", "lincolnshire", "university"];
-	var caption = ["Cambridge Flowers", "Exploring London", "Laduree Patisseries", "White Cliffs of Dover", "Lincolnshire Fields", "Cambridge University"];
+	var photographs = ["DespicableMe", "FlyingSwordsOfDragonGate", "HouseAtTheEndOfTheStreet", "IceAgeDOTD", "IronMan2", "Kick_Ass"];
 	var number = ["1 of 6", "2 of 6", "3 of 6", "4 of 6","5 of 6", "6 of 6"];
 	var thumbnailList = document.querySelector("#thumbnailList");
 	var source = thumbnailList.querySelectorAll ("img");
-	var cambridge = document.querySelector("#cambridge");
+	var despicable = document.querySelector("#despicable");
 	var largeImage = document.querySelector("#largeImage");
 	var captions = document.querySelector("#photoCaption");
 	var numbers = document.querySelector("#photoNum");
@@ -23,7 +22,7 @@
 
 		e.preventDefault();
 		var thisImg = "images/" + photographs[e.target.id] + ".jpg";
-		cambridge.src = thisImg;
+		despicable.src = thisImg;
 
 		var thisCaption = caption[e.target.id];
 		captions.innerHTML = thisCaption;
@@ -40,8 +39,8 @@
 		prevClicked = source[e.target.id];
 		prevClicked.style.opacity = 1;
 
-		TweenMax.from(cambridge, .7, {opacity:0, marginLeft:"-50px", ease:Strong.easeInOut});
-		TweenMax.to(cambridge, .7, {opacity:1, marginLeft:"0", ease:Strong.easeInOut});
+		TweenMax.from(despicable, .7, {opacity:0, marginLeft:"-50px", ease:Strong.easeInOut});
+		TweenMax.to(despicable, .7, {opacity:1, marginLeft:"0", ease:Strong.easeInOut});
 	}
 
 
